@@ -1,0 +1,21 @@
+// Complete the compareTriplets function below.
+vector<int> compareTriplets(vector<int> a, vector<int> b) {
+    int a_sum=0;
+    int b_sum=0;
+    vector <int> result;
+    for (int i=0;i<3;i++)
+    {
+        if (a[i]>b[i])
+        {
+            a_sum++;
+        }
+        if  (b[i]>a[i])
+         {
+           b_sum++;  
+         }
+    }
+result.push_back(a_sum);
+result.push_back(b_sum);
+return result;
+
+}
