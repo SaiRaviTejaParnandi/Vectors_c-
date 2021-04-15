@@ -1,0 +1,11 @@
+int simpleArraySum(vector<int> ar) {
+ 
+
+     int sum=0;
+     vector <int> :: iterator it = ar.begin();
+     for (it=ar.begin();it!=ar.end();++it){
+         sum=sum + (*it);
+          
+     }
+   return sum;   
+}
