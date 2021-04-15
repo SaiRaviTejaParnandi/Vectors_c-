@@ -1,0 +1,22 @@
+
+int diagonalDifference(vector<vector<int>> arr) {
+    int absoulte_sum=0;
+    int primary_sum=0;
+    int secondary_sum=0;
+    for (int i=0;i<arr.size();i++)
+    {
+        for (int j=0;j<arr.size();j++)
+        {
+          if (i==j)
+          {
+              primary_sum=primary_sum+arr[i][j];
+          } 
+          if(i+j+1 == arr.size())
+          {
+              secondary_sum=secondary_sum+arr[i][j];
+          } 
+        }
+    }
+    absoulte_sum=abs(primary_sum - secondary_sum);
+    return absoulte_sum;
+}
